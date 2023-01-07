@@ -29,9 +29,9 @@ def complex_cipher(message, key1, key2, key3, decode=False):
 
 def main():
     message = "message1"  # if decrypting, will take the form of: b'encryptedmessage'
-    key1 = "key1"
-    key2 = "key2"
-    key3 = "key3"
+    key1 = "key1" # first encryption key
+    key2 = "key2" # second key
+    key3 = "key3" # third key
     try:
         decrypted_message = complex_cipher(
             message, key1, key2, key3, decode=False)  # Change from "False" to "True" if decoding
